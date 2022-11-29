@@ -1,2 +1,0 @@
-# Flask
-# Datamatrix-Creator

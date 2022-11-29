@@ -1,0 +1,75 @@
+
+<h1>HTML Links</h1>
+<body>
+<form action="login" method="post">
+    <input type="text" name="quang">
+    <p></p> //xuong dong
+    <input type="submit" value="gui">
+    <a href="google">link</a> // chuyen qua link khac a la dinh dang mot hyperlink , neu co thêm https thì tự động chuyển qua trang khác còn không thì 127.0.0.1/link
+    <a href="https://www.google.com"target="_blank">quang</a> //nhay qua tab moi
+<h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <a href="default.asp"><img src="https://inkythuatso.com/uploads/thumbnails/800/2021/12/one-piece-logo-inkythuatso-16-09-46-48.jpg" alt="Hình" style="width:142px;height:142px;"></a>
+<h2>My First JavaScript</h2>
+ 
+    <input type="button"
+    onclick="bc()" value="Click me to display Date and Time" style="color:red;">
+    <p id="demo" style="color:blue;">123</p>
+    <input type="hidden" id="ngay" name="ngay" value="1234">
+    <script>
+        Q=document.getElementById(Date)
+    </script>
+
+</form>
+<from>
+    <button class="get_now" onclick="printdmc()">Create DMC</button>>
+    <script src="webcam.js"></script>
+
+    <div id="my_camera" style="width:320px; height:240px;"></div>
+    <div id="my_result"></div>
+    
+    <script language="JavaScript">
+        Webcam.attach( '#my_camera' );
+        function take_snapshot() {
+        Webcam.snap( function(data_uri) {
+            document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+        } );
+    }
+</script>
+
+<a href="javascript:void(take_snapshot())">Take Snapshot</a>
+
+<select class="transfot_form" style="width: 234px" id="ProductName" name="ProductName">
+    <option value="A2012003VC">A2012003VC</option>
+    <option value="A2012003TQ">A2012003TQ</option>
+    <option value="A2012004">A2012004</option>
+    <option value="A2107024">A2107024</option>
+</select>
+</from>
+<script>
+    function bc(){
+        document.getElementById('demo').innerHTML = Date();
+        document.getElementById('ngay').value = document.getElementById('demo').innerHTML;
+    }
+    aa=new http
+
+</script>
+<script>
+    function printdmc() {
+  const xhttp1 = new XMLHttpRequest();
+  xhttp1.onload = function () {
+    if (this.responseText.length != 29) {
+      console.log(this.responseText.length);
+      console.log(this.responseText);
+    } else {
+      window.location.href = "my.bluetoothprint.scheme://http://54.65.195.213/json/"+this.responseText;
+            
+    }
+  };
+  xhttp1.open("POST", "/printdmc");
+  xhttp1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp1.send("casting=" + 1 + "&product=" + 2);
+}
+</script>
+
+</body>

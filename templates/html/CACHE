@@ -1,0 +1,26 @@
+<script>
+      var olddmc="";
+      setInterval(function (){        
+        var dmc = document.getElementsByClassName("result")[0].innerHTML;
+        if (dmc.length==29){
+          olddmc = dmc;
+          const xhttp1 = new XMLHttpRequest();
+          xhttp1.onload = function () {
+            var a = window.open("", "", "");
+            a.document.write(
+              "<img style='width:46px;height:46px;' src='data:image/png;base64," + this.responseText + "'>"
+            );
+            a.document.close();
+            setTimeout(function () {
+              a.print();
+            }, 10);
+            setTimeout(function () {
+              document.getElementsByClassName("result")[0].innerHTML="";
+            }, 5000);
+          };
+          xhttp1.open("POST", "/printdmc");
+          xhttp1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          xhttp1.send("dmc=" + dmc);
+        }             
+      },100)
+    </script>
